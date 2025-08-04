@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">Biryani House</div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="text">
+          <h1>Welcome to Our Biryani House</h1>
+          <p>Biryani House – where every plate is filled with rich aroma, authentic spices, and the taste of tradition.</p>
+          <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="image">
+          <img src="https://wallpapers.com/images/hd/biryani-with-meat-cbgpci69xdzoy177.jpg" alt="Delicious Biryani" class="hero-img">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>&copy; <span id="year"></span> Briyani House. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <div class="social">
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
